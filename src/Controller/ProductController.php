@@ -2,12 +2,13 @@
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ProductController {
+class ProductController extends AbstractController{
 
-    public function listAction()
+    public function index()
     {
-        return new Response ('<html><body>hello word</body></html>');
+        return $this->render('Product/list.html.twig', ['param' => 'Hey miszczu']);
     }
     
 }
