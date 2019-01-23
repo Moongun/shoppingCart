@@ -1,1 +1,15 @@
-<h1>{{ param }}</h1>
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div>
+        <div>
+            <a href="{{ path('product_index') }}"><div>lista produktów</div></a>
+        </div>
+        <div>
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+        </div>
+    </div>
+
+{% endblock %}

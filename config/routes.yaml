@@ -1,3 +1,18 @@
-product_list:
+product_index:
     path: /product
     controller: App\Controller\ProductController::index
+
+product_create:
+    path: /product/create
+    controller: App\Controller\ProductController::create
+    
+product_edit:
+    path: /product/edit/{id}
+    controller: App\Controller\ProductController::edit
+    
+product_delete:
+    path: /product/delete/{id}
+    controller: App\Controller\ProductController::delete
+    
+
+
